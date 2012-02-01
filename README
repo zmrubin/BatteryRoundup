@@ -1,0 +1,20 @@
+/**
+ * This sketch creates a series of "DDR Difficulty" graphs based on several battery characteristics
+ * To use it, download the spreadhseet (linked below) as a CSV, make sure it is named battData.csv and is located in the data folder
+ * If you want [to be awesome and] contribute to the list of batteries request edit priviledges on the google doc and i'll 
+ * approve you. 
+ * Spreadsheet link: http://tinyurl.com/85u33xr
+ * 
+ * There are two things that could be potentially misleading with this.
+ * 1) every manafacturer seems to want to rate their batterie's Ah capacity at different discharge rate. ie one 60Ah battery 
+ * may fall to 40Ah when discharged at 1c, while another may only fall to 55. As 1c is closer to reality in an EV application
+ * I'm considering editing the table to use approximated 1c capacities, as opposed to the advertised number. 
+ * 2) As the batteries are directly contrasted with one another a value may seem low, while in reality it is quite adequate. 
+ * For example Headway cells seem to have a rather low constant current and pulse discharge rate, however 5c/10c is 
+ * plenty for most applications. At 5c the entire pack is drained in 12 minutes! this only seems low because there are also much 
+ * higher discharge rate discharge batteries available. 
+ * 
+ * Zachary M. Rubin Feb. 2012
+ * zmr [at] hardwarewasteland [dot] net
+ * www.hardwarewasteland.net
+ * Creative Commons Attribution-ShareAlike 3.0 Unported License
